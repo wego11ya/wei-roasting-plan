@@ -7,7 +7,7 @@
 目前已知條件：
 
 - 使用者是烘豆初學者，預設沒有烘豆背景知識。
-- 烘豆機是 Kaleido M1，批次容量以 200g 等級來規劃。
+- 烘豆機是 Kaleido M1，機器容量以 200g 等級理解；實際批次量以每支豆子的計畫為準，目前可用 `100g` 左右小批次建立基準。
 - 烘焙紀錄與曲線觀察使用 Artisan。
 - 專案內容以文件為主，用來科普烘豆知識、整理烘焙方法、保存烘焙計畫與回顧。
 
@@ -21,7 +21,7 @@
 
 ## 專案目錄規劃
 
-目前可以先用以下目錄方向整理。若目錄尚未存在，未來任務需要時再建立。
+目前優先依「豆子」分資料夾。每一支豆子有自己的生豆資料、參考曲線、每一鍋計畫、Artisan 檔案與覆盤，方便同一支豆跨鍋比較。
 
 ```text
 docs/
@@ -29,19 +29,34 @@ docs/
   equipment/        # Kaleido M1、Artisan、感測與操作設定
   tasting/          # 杯測、風味描述、萃取與烘焙結果關聯
 
+beans/
+  <bean-slug>/       # 單一豆子的總資料夾，例如 ethiopia-nensebo-geisha-washed
+    bean.md          # 生豆基本資料、目前學到的重點、檔案索引
+    references/      # 這支豆或這支豆使用到的參考曲線、截圖、供應商資料
+    roasts/
+      YYYY-MM-DD-first-roast/
+        plan.md      # 該鍋原始計畫
+        review.md    # 該鍋覆盤；若尚未烘可先沒有
+        artisan/
+          *.alog     # Artisan 原始檔
+          *.csv      # Artisan 匯出資料
+          *.png      # 曲線圖或截圖
+      YYYY-MM-DD-second-roast/
+        plan.md
+        review.md
+        artisan/
+
 plans/
-  templates/        # 烘焙計畫模板
-  upcoming/         # 尚未執行的烘焙計畫
-  completed/        # 已執行且整理過的烘焙計畫
+  templates/         # 跨豆子可重複使用的烘焙計畫模板
+  upcoming/          # 臨時草稿；正式整理後移到 beans/<bean-slug>/roasts/
+  completed/         # 舊資料或尚未整理成豆子資料夾的已完成計畫
 
 logs/
-  artisan/          # Artisan 匯出檔或曲線資料說明
-  roast-notes/      # 每鍋烘焙筆記、觀察、下次調整
-
-beans/
-  inventory/        # 生豆庫存與基本資料
-  references/       # 產區、處理法、品種、密度、含水率等資料
+  artisan/           # 舊資料暫存；新資料優先放到 beans/<bean-slug>/roasts/<roast>/artisan/
+  roast-notes/       # 舊筆記暫存；新覆盤優先放到 beans/<bean-slug>/roasts/<roast>/review.md
 ```
+
+豆子資料夾命名建議用小寫英文與連字號，例如 `ethiopia-nensebo-geisha-washed`。若同一支豆有不同批次或不同供應商，檔名或資料夾名稱要補上足以區分的資訊。
 
 ## 文件寫作原則
 
@@ -56,7 +71,7 @@ beans/
 - 可以使用表格整理比較，但不要為了格式犧牲可讀性。
 - 文件檔名建議使用小寫英文與連字號，例如 `rate-of-rise.md`、`first-crack.md`。
 
-## 烘焙計畫原則
+## 烘焙計畫與覆盤原則
 
 烘焙計畫應該能回答：
 
@@ -68,6 +83,12 @@ beans/
 - 預計一爆、發展時間、下豆溫或下豆條件是什麼？
 - 實際結果跟預期差在哪裡？
 - 下一鍋要改什麼？
+
+每份烘焙計畫優先放在：
+
+```text
+beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/plan.md
+```
 
 每份烘焙計畫至少要有：
 
@@ -91,12 +112,40 @@ beans/
 ## 下次調整
 ```
 
+每份覆盤優先放在：
+
+```text
+beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/review.md
+```
+
+覆盤至少要有：
+
+```markdown
+# 第 N 鍋覆盤：豆名 / 日期
+
+## 檔案
+
+## 基本資料
+
+## 曲線事件
+
+## 當下觀察
+
+## 主要判讀
+
+## 第二鍋 / 下一鍋要驗證什麼
+```
+
+覆盤要先整理事實，再分析可能原因，最後提出下一鍋可驗證的調整。不要把單一結果寫成絕對規則。
+
 ## Artisan 相關紀錄
 
 - 優先保留原始曲線或匯出資料，不要只留下文字心得。
+- 新資料優先放在對應豆子的 `artisan/` 資料夾，例如 `beans/<bean-slug>/roasts/YYYY-MM-DD-first-roast/artisan/`。
 - 文字筆記要對應曲線事件，例如入豆、回溫點、一爆開始、一爆結束、下豆。
 - 若引用 Artisan 指標，先寫清楚數值來源與定義，避免把不同設定下的數值直接比較。
-- 未來若加入 Artisan 檔案，盡量在文件中連結到對應檔案，並補上簡短摘要。
+- 若 Artisan 的 `Roast -> Properties` 沒有填實際生豆重量與熟豆重量，文件中要明確標註，不要把圖上顯示的批次重量當作實際入豆量。
+- 若有 reference 曲線或截圖，放在 `beans/<bean-slug>/references/`，並在計畫或覆盤中連結。
 
 ## 安全與實作注意
 
