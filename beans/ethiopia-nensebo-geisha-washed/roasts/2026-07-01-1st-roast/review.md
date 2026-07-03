@@ -6,9 +6,9 @@
 
 | 類型 | 檔案 |
 | --- | --- |
-| Artisan 原始檔 | [2026-07-01-first-roast.alog](artisan/2026-07-01-first-roast.alog) |
-| Artisan CSV | [2026-07-01-first-roast.csv](artisan/2026-07-01-first-roast.csv) |
-| Artisan 曲線圖 | [2026-07-01-first-roast.png](artisan/2026-07-01-first-roast.png) |
+| Artisan 原始檔 | [2026-07-01-1st-roast.alog](artisan/2026-07-01-1st-roast.alog) |
+| Artisan CSV | [2026-07-01-1st-roast.csv](artisan/2026-07-01-1st-roast.csv) |
+| Artisan 曲線圖 | [2026-07-01-1st-roast.png](artisan/2026-07-01-1st-roast.png) |
 | Reference 曲線圖 | [../../references/2026-07-01-reference-kaleido-m1-light-roast-profile.png](../../references/2026-07-01-reference-kaleido-m1-light-roast-profile.png) |
 
 ## 基本資料

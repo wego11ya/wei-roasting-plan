@@ -34,14 +34,14 @@ beans/
     bean.md          # 生豆基本資料、目前學到的重點、檔案索引
     references/      # 這支豆或這支豆使用到的參考曲線、截圖、供應商資料
     roasts/
-      YYYY-MM-DD-first-roast/
+      YYYY-MM-DD-1st-roast/
         plan.md      # 該鍋原始計畫
         review.md    # 該鍋覆盤；若尚未烘可先沒有
         artisan/
           *.alog     # Artisan 原始檔
           *.csv      # Artisan 匯出資料
           *.png      # 曲線圖或截圖
-      YYYY-MM-DD-second-roast/
+      YYYY-MM-DD-2nd-roast/
         plan.md
         review.md
         artisan/
@@ -57,6 +57,8 @@ logs/
 ```
 
 豆子資料夾命名建議用小寫英文與連字號，例如 `ethiopia-nensebo-geisha-washed`。若同一支豆有不同批次或不同供應商，檔名或資料夾名稱要補上足以區分的資訊。
+
+烘焙鍋次資料夾與該鍋 Artisan 檔案命名使用數字序數，不使用英文單字序數，避免第很多鍋時難讀。格式是 `YYYY-MM-DD-<ordinal>-roast`，例如 `2026-07-01-1st-roast`、`2026-07-02-2nd-roast`、`2026-07-03-3rd-roast`、`2026-09-10-99th-roast`。序數後綴照英文慣例：`1st`、`2nd`、`3rd`，其他多數用 `th`，但 `11th`、`12th`、`13th` 仍用 `th`。
 
 ## 文件寫作原則
 
@@ -87,7 +89,7 @@ logs/
 每份烘焙計畫優先放在：
 
 ```text
-beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/plan.md
+beans/<bean-slug>/roasts/YYYY-MM-DD-<ordinal>-roast/plan.md
 ```
 
 每份烘焙計畫至少要有：
@@ -115,7 +117,7 @@ beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/plan.md
 每份覆盤優先放在：
 
 ```text
-beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/review.md
+beans/<bean-slug>/roasts/YYYY-MM-DD-<ordinal>-roast/review.md
 ```
 
 覆盤至少要有：
@@ -141,7 +143,7 @@ beans/<bean-slug>/roasts/YYYY-MM-DD-<nth>-roast/review.md
 ## Artisan 相關紀錄
 
 - 優先保留原始曲線或匯出資料，不要只留下文字心得。
-- 新資料優先放在對應豆子的 `artisan/` 資料夾，例如 `beans/<bean-slug>/roasts/YYYY-MM-DD-first-roast/artisan/`。
+- 新資料優先放在對應豆子的 `artisan/` 資料夾，例如 `beans/<bean-slug>/roasts/YYYY-MM-DD-1st-roast/artisan/`。
 - 文字筆記要對應曲線事件，例如入豆、回溫點、一爆開始、一爆結束、下豆。
 - 若引用 Artisan 指標，先寫清楚數值來源與定義，避免把不同設定下的數值直接比較。
 - 若 Artisan 的 `Roast -> Properties` 沒有填實際生豆重量與熟豆重量，文件中要明確標註，不要把圖上顯示的批次重量當作實際入豆量。

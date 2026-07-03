@@ -30,7 +30,6 @@
 | 類型 | 檔案 |
 | --- | --- |
 | Reference 曲線圖 | [2026-07-01-reference-kaleido-m1-light-roast-profile.png](references/2026-07-01-reference-kaleido-m1-light-roast-profile.png) |
-| 第一鍋計畫 | [roasts/2026-07-01-first-roast/plan.md](roasts/2026-07-01-first-roast/plan.md) |
-| 第一鍋覆盤 | [roasts/2026-07-01-first-roast/review.md](roasts/2026-07-01-first-roast/review.md) |
-| 第二鍋計畫 | [roasts/2026-07-02-second-roast/plan.md](roasts/2026-07-02-second-roast/plan.md) |
-
+| 第一鍋計畫 | [roasts/2026-07-01-1st-roast/plan.md](roasts/2026-07-01-1st-roast/plan.md) |
+| 第一鍋覆盤 | [roasts/2026-07-01-1st-roast/review.md](roasts/2026-07-01-1st-roast/review.md) |
+| 第二鍋計畫 | [roasts/2026-07-02-2nd-roast/plan.md](roasts/2026-07-02-2nd-roast/plan.md) |
