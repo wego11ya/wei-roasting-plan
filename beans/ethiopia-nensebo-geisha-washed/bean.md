@@ -22,7 +22,7 @@
 
 - 這支豆子密度高，但目前用 `100g` 左右小批次烘，熱量不能直接套用 `150g` reference。
 - 第一鍋實際 `102.1g -> 86.1g`，失重率 `15.67%`，苦味明顯，代表熱量與發展都過頭。
-- 第二鍋先不追求完整復刻 reference，先把一爆開始拉回 `7:30-8:30`，並把一爆後發展壓回約 `1:00-1:15`。
+- 第二鍋實際約 `102.44g -> 89.52g`，失重率約 `12.6%`；FCs 從第一鍋 `4:14` 拉到 `6:24`，發展時間壓到 `1:05`，明顯改善，但 FCs 前進程仍比 reference 快。
 - 同一支豆後續比較時，要固定批次量、Artisan 重量欄位、事件標記方式與杯測時間。
 
 ## 檔案索引
@@ -33,3 +33,5 @@
 | 第一鍋計畫 | [roasts/2026-07-01-1st-roast/plan.md](roasts/2026-07-01-1st-roast/plan.md) |
 | 第一鍋覆盤 | [roasts/2026-07-01-1st-roast/review.md](roasts/2026-07-01-1st-roast/review.md) |
 | 第二鍋計畫 | [roasts/2026-07-02-2nd-roast/plan.md](roasts/2026-07-02-2nd-roast/plan.md) |
+| 第二鍋覆盤 | [roasts/2026-07-02-2nd-roast/review.md](roasts/2026-07-02-2nd-roast/review.md) |
+| 第三鍋計畫 | [roasts/2026-07-03-3rd-roast/plan.md](roasts/2026-07-03-3rd-roast/plan.md) |
