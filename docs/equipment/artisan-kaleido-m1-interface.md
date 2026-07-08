@@ -68,6 +68,8 @@
 
 `PID` 可以先理解成「機器或軟體為了接近目標溫度，自動調整輸出強弱的控溫方式」。對初學者來說，先知道它會嘗試追目標溫度就夠了，不需要一開始研究參數。
 
+2026-07-05 的空機測試顯示，目前這台 Kaleido M1 搭配 Artisan 時，`SV` 不能當成無關緊要的欄位。當 `SV` 是 `0°C` 或很低時，只把 `Burner` 拉高，ET / BT 不一定會上升；把 `SV` 拉高後，溫度才開始跟著上升。正式烘豆時，入豆後不要讓 `SV` 長時間停在預熱用的低目標，詳見 [Kaleido M1：SV、Burner、Air 的關係測試筆記](kaleido-m1-sv-burner-air-relationship.md)。
+
 ## 剛開機預熱：SV 與 AUTO Burner 怎麼想
 
 `SV` 是 Set Value，也就是「你希望機器接近的目標值」。如果這一鍋計畫用 `160°C` 左右入豆，剛開機預熱時可以先把 `SV` 設成 `160°C`，讓它成為預熱目標。
@@ -237,6 +239,7 @@
 
 ## 參考資料
 
+- 本專案測試筆記：[Kaleido M1：SV、Burner、Air 的關係測試筆記](kaleido-m1-sv-burner-air-relationship.md)
 - Artisan Quick-Start Guide: https://artisan-scope.org/docs/quick-start-guide/
 - Artisan Events: https://artisan-scope.org/docs/events/
 - Artisan Controls: https://artisan-scope.org/docs/controls/
