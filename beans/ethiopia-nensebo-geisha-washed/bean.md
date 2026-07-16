@@ -1,6 +1,6 @@
 # 生豆資料：317 跳舞山羊 西阿希南西寶 G1 水洗藝伎
 
-這個資料夾集中保存同一支豆子的生豆資料、參考曲線、每一鍋計畫、Artisan 曲線檔與覆盤。之後要比較第 1 鍋、第 2 鍋、第 3 鍋時，先從這裡看。
+這個資料夾集中保存同一支豆子的生豆資料、參考曲線、每一鍋計畫、Artisan 曲線檔與覆盤。之後要比較各鍋的曲線、操作與杯測結果時，先從這裡看。
 
 ## 基本資料
 
@@ -25,7 +25,10 @@
 - 第二鍋實際約 `102.44g -> 89.52g`，失重率約 `12.6%`；FCs 從第一鍋 `4:14` 拉到 `6:24`，發展時間壓到 `1:05`，明顯改善，但 FCs 前進程仍比 reference 快。
 - 第三鍋實際 `101.6g -> 86.75g`，失重率約 `14.6%`；SV 長時間停在 `150°C`，RoR 在中段 crash，後段補火才進一爆，判定為失敗鍋。
 - 第四鍋實際 `101.0g -> 87.0g`，失重率約 `13.9%`；生豆太早放入入豆艙，起始條件不乾淨，且 SV 仍到中段才拉高，判定為失敗鍋。
+- 第五鍋實際 `101.4g -> 88.2g`，失重率約 `13.0%`；DE `4:08`、FCs `7:36`、DROP `8:35`。一爆前 RoR 平順下降，甜感與花果表現比第 2、3、4 鍋進步，目前可作新的操作基準。
+- 第五鍋 FCs 到 DROP 只有 `0:59`，BT 僅增加 `1.4°C`，下豆前粗估 RoR 已接近 `0.6°C/min`；後續要驗證一爆後是否因降火太快而限制 body 與回韻。
 - 2026-07-05 空機測試顯示，目前 Kaleido M1 + Artisan 設定下，SV 不能忽略；入豆後若 SV 留太低，只調 Burner 不一定能有效推升溫度。
+- 第六鍋規劃為影片 B 的慢節奏版本，目標是柔和、甜、低酸且有 body；第七鍋規劃為影片 E 的短總時長、長發展版本，目標是兼顧香氣、body 與回韻。
 - 同一支豆後續比較時，要固定批次量、Artisan 重量欄位、事件標記方式與杯測時間。
 
 ## 檔案索引
@@ -41,4 +44,8 @@
 | 第三鍋覆盤 | [roasts/2026-07-03-3rd-roast/review.md](roasts/2026-07-03-3rd-roast/review.md) |
 | 第四鍋臨時補記 | [roasts/2026-07-03-4th-roast/plan.md](roasts/2026-07-03-4th-roast/plan.md) |
 | 第四鍋覆盤 | [roasts/2026-07-03-4th-roast/review.md](roasts/2026-07-03-4th-roast/review.md) |
+| 第五鍋覆盤 | [roasts/2026-07-08-5th-roast/review.md](roasts/2026-07-08-5th-roast/review.md) |
+| 影片 A–E 烘焙節奏逆向工程 | [references/youtube-rxiz8bsucqa-roast-a-e-reverse-engineering.md](references/youtube-rxiz8bsucqa-roast-a-e-reverse-engineering.md) |
+| 第六鍋 B 版計畫 | [roasts/2026-07-15-6th-roast/plan.md](roasts/2026-07-15-6th-roast/plan.md) |
+| 第七鍋 E 版計畫 | [roasts/2026-07-15-7th-roast/plan.md](roasts/2026-07-15-7th-roast/plan.md) |
 | Kaleido M1 SV / Burner / Air 測試筆記 | [../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md](../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md) |
