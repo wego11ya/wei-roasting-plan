@@ -1,0 +1,178 @@
+:root {
+  color-scheme: light;
+  --ink: #2b211b;
+  --muted: #6e625b;
+  --paper: #f7f2e9;
+  --card: #fffdf8;
+  --coffee: #6d3d2a;
+  --coffee-dark: #3d241a;
+  --citrus: #e0a83d;
+  --leaf: #62715a;
+  --berry: #9b4d62;
+  --line: #d9ccbc;
+  --shadow: 0 18px 50px rgba(61, 36, 26, 0.09);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 8% 4%, rgba(224, 168, 61, 0.15), transparent 24rem),
+    linear-gradient(180deg, #fbf8f1 0%, var(--paper) 100%);
+  font-family: "Noto Serif TC", "Source Han Serif TC", "Microsoft JhengHei", serif;
+  line-height: 1.75;
+}
+
+a { color: var(--coffee); text-underline-offset: 0.18em; }
+a:hover { color: var(--berry); }
+
+.page {
+  width: min(1060px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 80px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+  gap: 36px;
+  align-items: end;
+  padding: 48px;
+  border: 1px solid rgba(109, 61, 42, 0.18);
+  border-radius: 28px;
+  background: rgba(255, 253, 248, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--berry);
+  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 { line-height: 1.25; }
+h1 { margin: 0; font-size: clamp(2.25rem, 5vw, 4.7rem); letter-spacing: -0.055em; }
+h2 { margin: 0 0 18px; font-size: clamp(1.55rem, 3vw, 2.35rem); letter-spacing: -0.025em; }
+h3 { margin: 0 0 8px; font-size: 1.12rem; }
+p { margin: 0 0 1em; }
+
+.lead { max-width: 44rem; margin: 20px 0 0; color: var(--muted); font-size: 1.14rem; }
+
+.lesson-meta {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 18px;
+  color: #fff9ef;
+  background: var(--coffee-dark);
+  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+}
+
+.lesson-meta span { display: block; color: #d9c5b9; font-size: 0.76rem; letter-spacing: 0.08em; }
+.lesson-meta strong { font-size: 1rem; }
+
+.section { margin-top: 60px; }
+.section-heading { max-width: 720px; margin-bottom: 24px; }
+.section-heading > p:last-child { color: var(--muted); }
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+}
+.card .number {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 16px;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: var(--coffee);
+  font: 700 0.9rem/1 "Segoe UI", sans-serif;
+}
+
+.callout {
+  padding: 24px 28px;
+  border-left: 5px solid var(--citrus);
+  border-radius: 6px 18px 18px 6px;
+  background: #fff8e8;
+}
+.callout strong { color: var(--coffee-dark); }
+
+.ladder { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.ladder > div { position: relative; padding: 24px; border: 1px solid var(--line); background: var(--card); }
+.ladder > div:first-child { border-radius: 18px 0 0 18px; }
+.ladder > div:last-child { border-radius: 0 18px 18px 0; }
+.ladder small { color: var(--muted); }
+.ladder .active { z-index: 1; border-color: var(--berry); background: #fff7f8; box-shadow: 0 0 0 2px rgba(155,77,98,.12); }
+
+.protocol { counter-reset: step; display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.protocol li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.protocol li::before {
+  content: counter(step, decimal-leading-zero);
+  color: var(--berry);
+  font: 800 0.85rem/1.75 "Segoe UI", sans-serif;
+}
+.protocol strong { display: block; margin-bottom: 2px; }
+.protocol p { margin: 0; color: var(--muted); }
+
+.sheet { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+table { width: 100%; border-collapse: collapse; min-width: 720px; }
+th, td { padding: 13px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { color: #fff; background: var(--coffee-dark); font: 700 0.86rem/1.4 "Segoe UI", "Microsoft JhengHei", sans-serif; }
+td:first-child { width: 20%; font-weight: 700; }
+tr:last-child td { border-bottom: 0; }
+.write-line { display: block; min-width: 100px; min-height: 1.5em; border-bottom: 1px dotted #9f8f83; }
+
+.checks { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; }
+
+details { margin-top: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+summary { cursor: pointer; padding: 16px 20px; font-weight: 800; }
+details > div { padding: 0 20px 18px; color: var(--muted); }
+
+.route { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.route article { padding: 20px; border-top: 4px solid var(--leaf); border-radius: 10px 10px 16px 16px; background: var(--card); box-shadow: 0 8px 24px rgba(61,36,26,.05); }
+.route .week { color: var(--berry); font: 800 0.78rem/1.2 "Segoe UI", sans-serif; letter-spacing: .08em; }
+
+.footer-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); }
+.button { display: inline-block; padding: 10px 16px; border-radius: 999px; color: white; background: var(--coffee); font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; font-weight: 700; text-decoration: none; }
+.button.secondary { color: var(--coffee); background: transparent; border: 1px solid var(--coffee); }
+.source-list li { margin-bottom: 10px; }
+.muted { color: var(--muted); }
+
+@media (max-width: 760px) {
+  .page { width: min(100% - 20px, 1060px); padding-top: 12px; }
+  .hero { grid-template-columns: 1fr; padding: 28px 22px; border-radius: 20px; }
+  .cards, .ladder, .route { grid-template-columns: 1fr; }
+  .ladder > div:first-child, .ladder > div:last-child { border-radius: 14px; }
+  .ladder > div { border-radius: 14px; }
+}
+
+@media print {
+  body { background: white; font-size: 10pt; }
+  .page { width: 100%; padding: 0; }
+  .hero, .card, .sheet, .route article { box-shadow: none; }
+  .footer-nav, details { display: none; }
+  .section { margin-top: 30px; }
+  a { color: inherit; text-decoration: none; }
+}
