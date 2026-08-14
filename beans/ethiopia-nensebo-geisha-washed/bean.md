@@ -28,7 +28,10 @@
 - 第五鍋實際 `101.4g -> 88.2g`，失重率約 `13.0%`；DE `4:08`、FCs `7:36`、DROP `8:35`。一爆前 RoR 平順下降，甜感與花果表現比第 2、3、4 鍋進步，目前可作新的操作基準。
 - 第五鍋 FCs 到 DROP 只有 `0:59`，BT 僅增加 `1.4°C`，下豆前粗估 RoR 已接近 `0.6°C/min`；後續要驗證一爆後是否因降火太快而限制 body 與回韻。
 - 2026-07-05 空機測試顯示，目前 Kaleido M1 + Artisan 設定下，SV 不能忽略；入豆後若 SV 留太低，只調 Burner 不一定能有效推升溫度。
-- 第六鍋規劃為影片 B 的慢節奏版本，目標是柔和、甜、低酸且有 body；第七鍋規劃為影片 E 的短總時長、長發展版本，目標是兼顧香氣、body 與回韻。
+- 第六鍋實際 `100.5g -> 87.7g`，失重率 `12.7%`；DE `3:57`、FCs `8:45`、DROP `9:48`。新增時間主要在一爆前中段，杯測呈現柔和、酸感較低與很長的尾韻，目前可作「柔和長尾韻」風味基準。
+- 第七鍋實際 `100.6g -> 87.4g`，失重率 `13.1%`；DE `4:00`、FCs `6:27`、DROP `7:36`。杯中前段酸感、層次與果汁感較強，但第 8、21 天都確認尾韻較短，尚未達到影片 E 想兼得前段香氣與長回韻的目標。
+- 第七鍋和第二鍋的 TP、FCs、DROP 很接近，但兩鍋的 Burner、Air、SV 與機體熱狀態不同；TP 又包含探針熱反應，因此不能用相近 TP 判定 soak 沒有作用。
+- 第六鍋後沒有降到 `50°C` 以下再預熱並不是操作錯誤；`50°C` 是完整結束後再關閉整機的門檻。連續烘焙應改記錄可重複的批次間熱重置程序與最低 BT / ET。
 - 同一支豆後續比較時，要固定批次量、Artisan 重量欄位、事件標記方式與杯測時間。
 
 ## 檔案索引
@@ -47,5 +50,7 @@
 | 第五鍋覆盤 | [roasts/2026-07-08-5th-roast/review.md](roasts/2026-07-08-5th-roast/review.md) |
 | 影片 A–E 烘焙節奏逆向工程 | [references/youtube-rxiz8bsucqa-roast-a-e-reverse-engineering.md](references/youtube-rxiz8bsucqa-roast-a-e-reverse-engineering.md) |
 | 第六鍋 B 版計畫 | [roasts/2026-07-15-6th-roast/plan.md](roasts/2026-07-15-6th-roast/plan.md) |
+| 第六鍋覆盤 | [roasts/2026-07-15-6th-roast/review.md](roasts/2026-07-15-6th-roast/review.md) |
 | 第七鍋 E 版計畫 | [roasts/2026-07-15-7th-roast/plan.md](roasts/2026-07-15-7th-roast/plan.md) |
+| 第七鍋覆盤 | [roasts/2026-07-15-7th-roast/review.md](roasts/2026-07-15-7th-roast/review.md) |
 | Kaleido M1 SV / Burner / Air 測試筆記 | [../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md](../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md) |

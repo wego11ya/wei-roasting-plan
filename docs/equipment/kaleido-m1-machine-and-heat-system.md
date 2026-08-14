@@ -269,6 +269,22 @@ Artisan 官方說 Kaleido 可讀取 ambient air temperature（AT）；本機裝�
 - 室溫與生豆是否維持室溫。
 - 前一鍋結束到這鍋入豆相隔多久。
 
+### 連續烘焙的批次間重置
+
+正常連續烘焙不需要每一鍋都先降到 `50°C` 以下。本文安全章節中的 `50°C` 是完成全部烘焙、準備關閉整機前的冷卻門檻；把它套成下一鍋前的必要條件，會把完整關機程序和批次間熱重置混為一談。
+
+連續烘焙真正要控制的是機體熱庫存。前一鍋 DROP 後，滾筒、機殼、加熱管與風路仍保留熱量；下一鍋即使 CHARGE 前 BT / ET 和第一鍋接近，整台機器的儲熱也不一定相同。Scott Rao 在 *Coffee Roasting: Best Practices* 第 29–30 頁把這類固定流程稱為批次間程序（between-batch protocol, BBP）：先讓機器用一致方式釋放多餘熱量，再回到可重複的入豆平台，而不是每次完整冷機。
+
+本機後續連續烘焙至少記錄：
+
+- 前一鍋 DROP 到下一鍋 CHARGE 的總間隔。
+- DROP 後 Burner、Air、Drum 與 SV 的設定。
+- 批次間最低 BT / ET，以及到達最低點所需時間。
+- 重新加熱開始時間、CHARGE 前 BT / ET、到達平台後的穩定時間。
+- 集銀皮盒與排氣路徑是否已在安全條件下檢查。
+
+這台 M1 的適當最低 BT / ET、等待秒數與重新加熱節奏仍待有豆實測，不能直接套用大型瓦斯滾筒的數值。若上一鍋出現異常煙、火星、火苗、焦味、保護停機或疑似熱損傷，則不屬於正常 BBP；應停止下一鍋，依後面的安全章節處理。
+
 ### 乾燥期
 
 豆子吸熱升溫，內部水分往外移動並蒸發。蒸發會消耗大量熱量；Air 同時參與熱風輸送與排濕，所以它的作用特別複雜。
@@ -298,7 +314,7 @@ M1 元件反應快，但關小 Burner 後，滾筒、機體與熱空氣仍有餘
 1. 明寫批次量；`100g` 與 `150g` 曲線不能直接視為同一條配方。
 2. 同時寫 `SV / Burner / Air / Drum`，不能只寫火力。
 3. 寫清楚 Burner 是 `AUTO` 或 `MANUAL`。
-4. 預熱條件要包含穩定時間與前一鍋狀態。
+4. 預熱條件要包含穩定時間與前一鍋狀態；連續烘焙還要記錄批次間最低 BT / ET、間隔與回到 CHARGE 平台的過程。
 5. 每個調整都要寫目的，例如「避免 SV 限制中段熱量」或「一爆前增加排煙」。
 6. 先固定 Drum；沒有測試目的時，不在一鍋內頻繁改轉速。
 7. 不把他人的 M1 曲線直接照抄，先確認版本、豆量、電壓、探針與 Artisan 設定。
@@ -461,6 +477,7 @@ Drum：固定混合與受熱分布
 
 ### 烘焙熱傳與量測參考
 
+- Scott Rao, *Coffee Roasting: Best Practices*，第 29–30 頁：批次間程序（BBP）與重建可重複機體熱狀態；本專案參考 `E:\repo\pdf-ocr\output\Scott-Rao-Coffee-Roasting-Best-Practices\agent\pages\` 的本機轉換文字。
 - [A heat and mass transfer study of coffee bean roasting](https://www.sciencedirect.com/science/article/pii/S0017931016311814)：咖啡豆內部熱與水分傳遞的物理模型。
 - [Smart Online Coffee Roasting Process Control](https://pmc.ncbi.nlm.nih.gov/articles/PMC7278678/)：`100g` 電熱滾筒實驗、豆堆熱電偶與入豆熱狀態對重現性的影響。
 - [Online Thermal Analysis of Batch Roasted Coffee Beans](https://researchcommons.waikato.ac.nz/entities/publication/54530ec5-91b7-45e2-b01c-446c8bfb849e)：烘焙過程的吸熱負載與一爆附近熱行為量測。

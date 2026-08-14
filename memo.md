@@ -27,3 +27,6 @@ kaleido m1 風扇銀皮阻擋
 
 https://bigislandcoffeeroasters.com/blogs/blog/what-is-a-honey-processed-coffee?srsltid=AfmBOoqYbj-FBQcy_874uYqzs8fcyNuNgTXCIIqof-_pdoC6MMHmHgQX
 這介紹處理法的文章
+
+
+最近看到一個定義淺烘焙是看發展時間的比例10-12%左右算是淺

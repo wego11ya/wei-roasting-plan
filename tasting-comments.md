@@ -296,3 +296,27 @@ ET030Y26
 - 來源：[官方商品頁](https://www.linkingcoffee.com.tw/web/product/product_in.jsp?last_id=DM1614735619552&pd_id=PD1783580428087)
 
 -------------------
+8/13 15g，冰沖
+感想就還不錯
+CR006Y26
+
+- 正式名稱：哥斯大黎加 布蘭卡 奇里波山谷 里瓦斯人處理廠 香柏莊園 紅蜜 卡杜艾／Costa Rica Brunca Chirripo Rivense Los Cipreses Red Honey Catuai
+- 產地與生產：哥斯大黎加；布蘭卡（Brunca）；海拔 1,700m；卡杜艾；里瓦斯人處理廠；香柏莊園；紅蜜；未另列等級；最後可驗證的個別頁標示 2025 產季。
+- 風味：乾香帶柑橘、蜜糖；品飲有熱帶水果、紅肉李、柑橘果乾、蜂蜜、烤堅果、紅糖，風味飽滿，甜感延續久。
+- 技術數值：含水量原文「10.3% D13+E14」；水分活性 0.5967；瑕疵率 1.9%。
+- 價格與庫存：現行官方紅蜜分類頁顯示 NT$490／kg、售完補貨中；最後可驗證的個別頁快照則為 10kg／盒、NT$440／kg。整袋規格與價格目前無法驗證。
+- 來源：[官方商品頁（目前回傳 500）](https://www.linkingcoffee.com.tw/web/product/product_in.jsp?last_id=DM1704865980730&pd_id=PD1767864045395)；[官方紅蜜分類頁](https://www.linkingcoffee.com.tw/web/product/product_list.jsp?dm_id=DM1601897917904&last_id=DM1704865980730)
+
+-----------------------------
+8/14 15g，zp6刻度4.7/水溫 92度/流轉360 02/濾滴1:8，60秒，浸泡到1:17，到1分45秒開，不過後面有點塞水
+這支我喜歡欸，充滿水果調性
+
+
+ET032Y26
+
+- 正式名稱：衣索比亞 西達馬 班莎鎮 聖塔維尼村 斑鳩處理廠 日曬 G1／Ethiopia Sidama Bensa Shantawene Buncho Natural G1
+- 產地與生產：衣索比亞；西達馬；海拔 2,100–2,360m；74158；Buncho；Daye Bensa；日曬；G1；2026 產季。
+- 風味：乾香帶花香、莓果醬；品飲有花香、柑橘、黃肉李、芒果乾、莓果醬，柑橘調伴莓果類水果，水果乾甜感飽滿。
+- 技術數值：含水量 10.3%；水分活性 0.5735；瑕疵率 0.8%。
+- 價格與庫存：頁面顯示 10kg／盒；散裝 NT$540／kg（可購）；整袋 30kg NT$15,600（NT$520／kg，可購）。
+- 來源：[官方商品頁](https://www.linkingcoffee.com.tw/web/product/product_in.jsp?last_id=DM1614735615719&pd_id=PD1783582661888)
