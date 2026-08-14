@@ -32,6 +32,7 @@
 - 第七鍋實際 `100.6g -> 87.4g`，失重率 `13.1%`；DE `4:00`、FCs `6:27`、DROP `7:36`。杯中前段酸感、層次與果汁感較強，但第 8、21 天都確認尾韻較短，尚未達到影片 E 想兼得前段香氣與長回韻的目標。
 - 第七鍋和第二鍋的 TP、FCs、DROP 很接近，但兩鍋的 Burner、Air、SV 與機體熱狀態不同；TP 又包含探針熱反應，因此不能用相近 TP 判定 soak 沒有作用。
 - 第六鍋後沒有降到 `50°C` 以下再預熱並不是操作錯誤；`50°C` 是完整結束後再關閉整機的門檻。連續烘焙應改記錄可重複的批次間熱重置程序與最低 BT / ET。
+- 2026-08-14 預計連續烘三鍋：第八鍋複製第六鍋柔和節奏；第九、十鍋共用 E 改良版骨架，只比較低風 `20→40%` 與高風 `60→80%`。三鍋第 1、8 天以相同浸泡條件盲測。
 - 同一支豆後續比較時，要固定批次量、Artisan 重量欄位、事件標記方式與杯測時間。
 
 ## 檔案索引
@@ -53,4 +54,7 @@
 | 第六鍋覆盤 | [roasts/2026-07-15-6th-roast/review.md](roasts/2026-07-15-6th-roast/review.md) |
 | 第七鍋 E 版計畫 | [roasts/2026-07-15-7th-roast/plan.md](roasts/2026-07-15-7th-roast/plan.md) |
 | 第七鍋覆盤 | [roasts/2026-07-15-7th-roast/review.md](roasts/2026-07-15-7th-roast/review.md) |
+| 第八鍋：第六鍋柔和版複製計畫 | [roasts/2026-08-14-8th-roast/plan.md](roasts/2026-08-14-8th-roast/plan.md) |
+| 第九鍋：E 改良低風版計畫 | [roasts/2026-08-14-9th-roast/plan.md](roasts/2026-08-14-9th-roast/plan.md) |
+| 第十鍋：E 改良高風版計畫 | [roasts/2026-08-14-10th-roast/plan.md](roasts/2026-08-14-10th-roast/plan.md) |
 | Kaleido M1 SV / Burner / Air 測試筆記 | [../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md](../../docs/equipment/kaleido-m1-sv-burner-air-relationship.md) |
