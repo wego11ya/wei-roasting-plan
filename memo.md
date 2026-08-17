@@ -30,3 +30,6 @@ https://bigislandcoffeeroasters.com/blogs/blog/what-is-a-honey-processed-coffee?
 
 
 最近看到一個定義淺烘焙是看發展時間的比例10-12%左右算是淺
+
+8/9/10鍋的生豆97g
+
